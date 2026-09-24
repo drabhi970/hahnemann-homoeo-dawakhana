@@ -6,27 +6,18 @@
 
 <title>Hahnemann Homoeo Dawakhana | Homoeopathy Clinic in Raebareli</title>
 
-<meta name="description" content="Hahnemann Homoeo Dawakhana in Raebareli, Uttar Pradesh. Homoeopathy consultations by Dr. Abhinav Singh, B.H.M.S., PG. Personalized consultations for a range of health concerns.">
+<meta name="description" content="Hahnemann Homoeo Dawakhana in Raebareli, Uttar Pradesh. Homoeopathy consultation by Dr. Abhinav Singh, B.H.M.S., PG. Learn about health concerns, wellness and personalised care.">
 
-<meta name="keywords" content="Homoeopathy clinic Raebareli, Homeopathic doctor Raebareli, Hahnemann Homoeo Dawakhana, Dr Abhinav Singh, Homoeopathy Uttar Pradesh">
+<meta name="keywords" content="Hahnemann Homoeo Dawakhana, homoeopathy clinic Raebareli, homeopathy doctor Raebareli, Dr Abhinav Singh, homoeopathy Raebareli">
 
 <meta name="author" content="Hahnemann Homoeo Dawakhana">
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JT9Q8C43M0"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-JT9Q8C43M0');
-</script>
 
 <style>
 
 *{
-    box-sizing:border-box;
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
 html{
@@ -35,19 +26,28 @@ html{
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    color:#173b35;
+    color:#17352f;
     background:#ffffff;
     line-height:1.6;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+:root{
+    --green:#07583f;
+    --dark:#063c2d;
+    --light:#f1f8f4;
+    --gold:#c6a45b;
+    --text:#243a35;
+    --white:#ffffff;
 }
 
 img{
     max-width:100%;
     display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
 }
 
 .container{
@@ -56,12 +56,12 @@ img{
     margin:auto;
 }
 
-/* TOP BAR */
+/* ================= TOP BAR ================= */
 
 .topbar{
-    background:#075c43;
+    background:var(--dark);
     color:white;
-    padding:10px 0;
+    padding:9px 0;
     font-size:14px;
 }
 
@@ -72,14 +72,10 @@ img{
     gap:20px;
 }
 
-.topbar a{
-    font-weight:bold;
-}
-
-/* HEADER */
+/* ================= HEADER ================= */
 
 header{
-    background:#ffffff;
+    background:white;
     position:sticky;
     top:0;
     z-index:1000;
@@ -87,115 +83,131 @@ header{
 }
 
 .header-inner{
-    min-height:88px;
+    min-height:90px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:30px;
+    gap:25px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
 .logo{
-    height:70px;
-    width:auto;
+    width:72px;
+    height:72px;
+    object-fit:contain;
+    border-radius:50%;
+    background:var(--green);
+    padding:5px;
+}
+
+.brand-text h1{
+    color:var(--green);
+    font-family:Georgia,serif;
+    font-size:27px;
+    line-height:1.05;
+}
+
+.brand-text p{
+    color:#7a6640;
+    font-size:12px;
+    letter-spacing:3px;
+    margin-top:5px;
 }
 
 nav{
     display:flex;
     align-items:center;
-    gap:25px;
+    gap:27px;
 }
 
 nav a{
-    font-size:15px;
     font-weight:600;
-    color:#173b35;
+    color:#25463e;
+    font-size:15px;
     transition:.3s;
 }
 
 nav a:hover{
-    color:#16805f;
+    color:#07845d;
 }
 
-.nav-button{
-    background:#087b59;
+.book-btn{
+    background:var(--green);
     color:white !important;
     padding:12px 20px;
-    border-radius:30px;
+    border-radius:25px;
 }
 
-.nav-button:hover{
-    background:#055c43;
+.book-btn:hover{
+    background:#087652;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
-    background:linear-gradient(90deg,#f6fbf8 0%,#ffffff 52%,#edf7f2 100%);
-    padding:70px 0;
+    background:
+    linear-gradient(90deg,rgba(246,250,246,.98) 0%,rgba(246,250,246,.90) 45%,rgba(246,250,246,.15) 100%);
+    padding:65px 0;
 }
 
 .hero-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     align-items:center;
-    gap:55px;
+    gap:45px;
 }
 
-.small-title{
-    color:#087b59;
-    font-size:15px;
+.eyebrow{
+    color:#087154;
+    font-size:14px;
     font-weight:bold;
     letter-spacing:2px;
     text-transform:uppercase;
     margin-bottom:15px;
 }
 
-.hero h1{
+.hero h2{
     font-family:Georgia,serif;
-    font-size:54px;
-    line-height:1.12;
-    color:#123a34;
-    margin-bottom:22px;
+    color:#0c3830;
+    font-size:52px;
+    line-height:1.08;
+    margin-bottom:20px;
 }
 
 .hero p{
+    color:#4c625d;
     font-size:18px;
-    color:#536862;
-    max-width:600px;
-    margin-bottom:30px;
+    max-width:590px;
+    margin-bottom:28px;
 }
 
 .buttons{
     display:flex;
-    gap:15px;
     flex-wrap:wrap;
+    gap:15px;
 }
 
-.btn{
+.primary-btn{
     display:inline-block;
-    padding:14px 25px;
-    border-radius:30px;
-    font-weight:bold;
-    border:2px solid #087b59;
-    transition:.3s;
-}
-
-.btn-primary{
-    background:#087b59;
+    background:var(--green);
     color:white;
+    padding:14px 24px;
+    border-radius:7px;
+    font-weight:bold;
 }
 
-.btn-primary:hover{
-    background:#055c43;
-}
-
-.btn-outline{
-    color:#087b59;
-    background:white;
-}
-
-.btn-outline:hover{
-    background:#eaf7f1;
+.secondary-btn{
+    display:inline-block;
+    border:2px solid var(--green);
+    color:var(--green);
+    padding:12px 24px;
+    border-radius:7px;
+    font-weight:bold;
 }
 
 .hero-image{
@@ -204,44 +216,40 @@ nav a:hover{
 
 .hero-image img{
     width:100%;
-    height:470px;
+    height:410px;
     object-fit:cover;
-    border-radius:25px;
-    box-shadow:0 20px 50px rgba(0,60,40,.18);
+    border-radius:22px;
+    box-shadow:0 15px 40px rgba(0,0,0,.16);
 }
 
 .image-label{
     position:absolute;
-    bottom:20px;
-    left:20px;
-    background:white;
-    padding:15px 20px;
-    border-radius:15px;
-    box-shadow:0 8px 25px rgba(0,0,0,.12);
+    bottom:18px;
+    left:18px;
+    right:18px;
+    background:rgba(255,255,255,.94);
+    padding:12px 16px;
+    border-radius:12px;
+    font-weight:bold;
+    color:var(--green);
 }
 
-.image-label strong{
-    display:block;
-    color:#087b59;
-}
-
-/* FEATURES */
+/* ================= FEATURES ================= */
 
 .features{
-    background:#f2faf6;
-    padding:35px 0;
+    background:var(--light);
+    padding:32px 0;
 }
 
 .feature-grid{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
+    grid-template-columns:repeat(5,1fr);
 }
 
 .feature{
     text-align:center;
-    padding:15px;
-    border-right:1px solid #d8e8e1;
+    padding:12px 18px;
+    border-right:1px solid #d8e5df;
 }
 
 .feature:last-child{
@@ -249,24 +257,25 @@ nav a:hover{
 }
 
 .feature-icon{
-    font-size:30px;
+    font-size:28px;
     margin-bottom:8px;
 }
 
 .feature h3{
-    font-size:17px;
+    font-size:16px;
+    color:var(--green);
     margin-bottom:5px;
 }
 
 .feature p{
-    font-size:14px;
-    color:#63756f;
+    font-size:13px;
+    color:#60736e;
 }
 
-/* SECTIONS */
+/* ================= SECTION ================= */
 
 section{
-    padding:80px 0;
+    padding:75px 0;
 }
 
 .section-heading{
@@ -275,22 +284,30 @@ section{
     margin:0 auto 45px;
 }
 
-.section-heading .small-title{
-    margin-bottom:8px;
+.section-heading .small{
+    color:#087154;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:3px;
+    text-transform:uppercase;
 }
 
 .section-heading h2{
     font-family:Georgia,serif;
     font-size:38px;
-    color:#143b34;
-    margin-bottom:12px;
+    color:#123e34;
+    margin:10px 0 14px;
 }
 
 .section-heading p{
-    color:#687973;
+    color:#63736e;
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
+
+.about{
+    background:white;
+}
 
 .about-grid{
     display:grid;
@@ -303,37 +320,39 @@ section{
     width:100%;
     height:430px;
     object-fit:cover;
-    border-radius:22px;
+    border-radius:18px;
+    box-shadow:0 12px 35px rgba(0,0,0,.13);
 }
 
 .about-text h2{
     font-family:Georgia,serif;
     font-size:38px;
-    margin-bottom:20px;
-}
-
-.about-text p{
-    color:#5e706b;
+    color:#123e34;
     margin-bottom:18px;
 }
 
-.doctor-box{
-    margin-top:25px;
-    background:#f2faf6;
-    padding:20px;
-    border-left:4px solid #087b59;
-    border-radius:10px;
+.about-text p{
+    color:#566963;
+    margin-bottom:15px;
 }
 
-.doctor-box strong{
-    font-size:20px;
-    color:#075c43;
+.doctor-card{
+    background:var(--light);
+    border-left:5px solid var(--green);
+    padding:18px;
+    margin-top:22px;
+    border-radius:8px;
 }
 
-/* SERVICES */
+.doctor-card strong{
+    color:var(--green);
+    font-size:19px;
+}
+
+/* ================= SERVICES ================= */
 
 .services{
-    background:#f8fbfa;
+    background:#f7faf8;
 }
 
 .service-grid{
@@ -345,96 +364,84 @@ section{
 .service-card{
     background:white;
     padding:28px;
-    border-radius:18px;
-    border:1px solid #e2eee9;
+    border-radius:15px;
+    box-shadow:0 6px 25px rgba(0,0,0,.06);
+    border:1px solid #e7eee9;
     transition:.3s;
 }
 
 .service-card:hover{
     transform:translateY(-5px);
-    box-shadow:0 15px 35px rgba(0,80,55,.10);
+    box-shadow:0 12px 30px rgba(0,0,0,.10);
 }
 
 .service-icon{
-    width:50px;
-    height:50px;
+    width:48px;
+    height:48px;
     border-radius:50%;
-    background:#e4f5ed;
+    background:#e3f3eb;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:24px;
+    font-size:23px;
     margin-bottom:15px;
 }
 
 .service-card h3{
+    color:var(--green);
     margin-bottom:8px;
-    color:#16473c;
 }
 
 .service-card p{
-    color:#6a7975;
-    font-size:15px;
+    color:#687873;
+    font-size:14px;
 }
 
-/* ARTICLES */
+/* ================= ARTICLES ================= */
 
-.article-grid{
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:25px;
-}
-
-.article-main,
-.article-side{
+.articles{
     background:white;
-    border:1px solid #e1ece7;
-    border-radius:20px;
-    padding:30px;
 }
 
-.article-main{
-    box-shadow:0 10px 30px rgba(0,70,50,.07);
+.article-card{
+    max-width:900px;
+    margin:auto;
+    background:#f5faf7;
+    border-radius:18px;
+    padding:35px;
+    border:1px solid #dcebe4;
 }
 
 .article-tag{
-    color:#087b59;
-    font-size:13px;
+    color:#087154;
     font-weight:bold;
+    font-size:13px;
+    letter-spacing:2px;
     text-transform:uppercase;
-    letter-spacing:1px;
 }
 
-.article-main h3{
+.article-card h3{
     font-family:Georgia,serif;
     font-size:30px;
+    color:#123e34;
     margin:10px 0 15px;
 }
 
-.article-main p,
-.article-side p{
-    color:#61726d;
-    margin-bottom:15px;
+.article-card p{
+    color:#596c66;
 }
 
-.article-main ul{
-    padding-left:20px;
-    color:#61726d;
+.read-more{
+    display:inline-block;
+    margin-top:18px;
+    color:var(--green);
+    font-weight:bold;
 }
 
-.article-main li{
-    margin-bottom:8px;
-}
-
-.article-side h3{
-    font-size:21px;
-    margin-bottom:15px;
-}
-
-/* GALLERY */
+/* ================= GALLERY ================= */
 
 .gallery{
-    background:#f7fbf9;
+    background:#f7faf8;
 }
 
 .gallery-grid{
@@ -444,27 +451,29 @@ section{
 }
 
 .gallery-item{
-    overflow:hidden;
-    border-radius:20px;
     background:white;
-    box-shadow:0 10px 25px rgba(0,50,40,.08);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
 .gallery-item img{
     width:100%;
-    height:380px;
+    height:360px;
     object-fit:cover;
-    transition:.4s;
 }
 
-.gallery-item:hover img{
-    transform:scale(1.03);
+.gallery-caption{
+    padding:15px;
+    font-weight:bold;
+    color:var(--green);
+    text-align:center;
 }
 
-/* CONTACT */
+/* ================= CONTACT ================= */
 
 .contact{
-    background:#075c43;
+    background:var(--green);
     color:white;
 }
 
@@ -472,125 +481,100 @@ section{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:45px;
+    align-items:center;
 }
 
 .contact h2{
     font-family:Georgia,serif;
-    font-size:40px;
+    font-size:38px;
     margin-bottom:15px;
 }
 
 .contact p{
-    color:#d8eee5;
-    margin-bottom:12px;
+    color:#e0eee9;
+    margin-bottom:10px;
 }
 
-.contact-card{
+.contact-box{
     background:white;
-    color:#173b35;
-    border-radius:20px;
+    color:#23433b;
     padding:30px;
+    border-radius:16px;
 }
 
 .contact-row{
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .contact-row strong{
     display:block;
-    color:#087b59;
+    color:var(--green);
     margin-bottom:4px;
 }
 
-.contact-row a{
-    color:#173b35;
+.whatsapp{
+    display:inline-block;
+    background:#20a45a;
+    color:white;
+    padding:13px 22px;
+    border-radius:7px;
     font-weight:bold;
+    margin-top:10px;
 }
 
-/* DISCLAIMER */
-
-.disclaimer{
-    background:#fff9ed;
-    padding:30px 0;
-}
-
-.disclaimer p{
-    max-width:1000px;
-    margin:auto;
-    text-align:center;
-    color:#6b6250;
-    font-size:14px;
-}
-
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
-    background:#063e2e;
-    color:#d7eee5;
-    padding:30px 0;
-}
-
-.footer-inner{
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-    align-items:center;
-}
-
-footer p{
+    background:#042d22;
+    color:#c8dad4;
+    padding:25px 0;
+    text-align:center;
     font-size:14px;
 }
 
-/* FLOATING BUTTONS */
-
-.floating{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    z-index:999;
-}
-
-.float-btn{
-    width:52px;
-    height:52px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.footer-name{
     color:white;
-    font-size:22px;
-    box-shadow:0 5px 18px rgba(0,0,0,.2);
+    font-weight:bold;
+    margin-bottom:5px;
 }
 
-.call{
-    background:#087b59;
-}
-
-.whatsapp{
-    background:#159447;
-}
-
-/* MOBILE */
+/* ================= RESPONSIVE ================= */
 
 @media(max-width:950px){
 
+    .header-inner{
+        flex-direction:column;
+        padding:18px 0;
+    }
+
     nav{
-        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
     }
 
-    nav a{
-        font-size:13px;
+    .hero-grid,
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
     }
 
-    .hero h1{
-        font-size:43px;
+    .hero{
+        padding:45px 0;
+    }
+
+    .hero h2{
+        font-size:42px;
     }
 
     .feature-grid{
         grid-template-columns:repeat(2,1fr);
+    }
+
+    .feature{
+        border-right:none;
+        border-bottom:1px solid #d8e5df;
+        padding:18px;
     }
 
     .service-grid{
@@ -599,46 +583,51 @@ footer p{
 
 }
 
-@media(max-width:700px){
+@media(max-width:600px){
 
     .topbar-inner{
         flex-direction:column;
-        gap:3px;
         text-align:center;
+        gap:3px;
     }
 
-    .header-inner{
-        flex-direction:column;
-        padding:15px 0;
+    .brand{
+        width:100%;
+        justify-content:center;
     }
 
     .logo{
-        height:65px;
+        width:60px;
+        height:60px;
+    }
+
+    .brand-text h1{
+        font-size:21px;
+    }
+
+    .brand-text p{
+        font-size:9px;
+        letter-spacing:2px;
     }
 
     nav{
-        flex-wrap:wrap;
-        justify-content:center;
+        gap:10px;
     }
 
     nav a{
         font-size:13px;
     }
 
-    .nav-button{
+    .book-btn{
         padding:9px 14px;
     }
 
     .hero{
-        padding:45px 0;
+        padding:35px 0;
     }
 
-    .hero-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero h1{
-        font-size:39px;
+    .hero h2{
+        font-size:35px;
     }
 
     .hero p{
@@ -646,57 +635,33 @@ footer p{
     }
 
     .hero-image img{
-        height:330px;
-    }
-
-    .feature-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .feature{
-        border-right:none;
+        height:280px;
     }
 
     section{
-        padding:60px 0;
+        padding:55px 0;
     }
 
-    .section-heading h2{
-        font-size:31px;
+    .section-heading h2,
+    .about-text h2,
+    .contact h2{
+        font-size:30px;
     }
 
-    .about-grid{
-        grid-template-columns:1fr;
-    }
-
-    .about-image img{
-        height:330px;
-    }
-
-    .service-grid{
-        grid-template-columns:1fr;
-    }
-
-    .article-grid{
-        grid-template-columns:1fr;
-    }
-
+    .feature-grid,
+    .service-grid,
     .gallery-grid{
         grid-template-columns:1fr;
     }
 
     .gallery-item img{
-        height:330px;
+        height:280px;
     }
 
-    .contact-grid{
-        grid-template-columns:1fr;
+    .article-card{
+        padding:25px;
     }
 
-    .footer-inner{
-        flex-direction:column;
-        text-align:center;
-    }
 }
 
 </style>
@@ -705,153 +670,181 @@ footer p{
 <body>
 
 <!-- TOP BAR -->
+
 <div class="topbar">
     <div class="container topbar-inner">
         <div>Hahnemann Homoeo Dawakhana • Raebareli, Uttar Pradesh</div>
-        <div>
-            <a href="tel:+919450611825">Call: +91 94506 11825</a>
-        </div>
+        <div>Call: +91 94506 11825</div>
     </div>
 </div>
 
 <!-- HEADER -->
+
 <header>
     <div class="container header-inner">
 
-        <a href="#home">
-            <img src="images/logo.png"
-                 class="logo"
-                 alt="Hahnemann Homoeo Dawakhana Logo">
+        <a href="#home" class="brand">
+
+            <img
+                src="/images/logo.png"
+                alt="Hahnemann Homoeo Dawakhana Logo"
+                class="logo"
+            >
+
+            <div class="brand-text">
+                <h1>Hahnemann<br>Homoeo Dawakhana</h1>
+                <p>SAFE • GENTLE • HOLISTIC</p>
+            </div>
+
         </a>
 
         <nav>
             <a href="#home">Home</a>
-            <a href="#about">About</a>
+            <a href="#about">About Us</a>
             <a href="#services">Services</a>
             <a href="#articles">Health Articles</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
-            <a class="nav-button" href="tel:+919450611825">
-                Book Consultation
-            </a>
+            <a href="#contact" class="book-btn">📅 Book Consultation</a>
         </nav>
 
     </div>
 </header>
 
 <!-- HERO -->
+
 <section class="hero" id="home">
+
     <div class="container hero-grid">
 
         <div>
-            <div class="small-title">
-                Homoeopathy Clinic in Raebareli
+
+            <div class="eyebrow">
+                Trusted Homoeopathy Care in Raebareli
             </div>
 
-            <h1>
-                Personalized Care for Your Health & Well-Being
-            </h1>
+            <h2>
+                Personalised Care for Your Health & Well-Being
+            </h2>
 
             <p>
                 Welcome to Hahnemann Homoeo Dawakhana, Raebareli.
-                We provide individualized homoeopathy consultations
-                with a focus on understanding your health concerns,
-                medical history and overall well-being.
+                We provide personalised homoeopathy consultations
+                with attention to your health concerns, medical history
+                and overall well-being.
             </p>
 
             <div class="buttons">
-                <a class="btn btn-primary"
-                   href="tel:+919450611825">
-                    📞 Book Consultation
+
+                <a href="#contact" class="primary-btn">
+                    📅 Book Consultation
                 </a>
 
-                <a class="btn btn-outline"
-                   href="#about">
+                <a href="#about" class="secondary-btn">
                     Know More →
                 </a>
+
             </div>
+
         </div>
 
         <div class="hero-image">
 
-            <img src="images/clinic-front.jpg"
-                 alt="Hahnemann Homoeo Dawakhana clinic in Raebareli">
+            <img
+                src="/images/clinic-front.jpg"
+                alt="Hahnemann Homoeo Dawakhana clinic in Raebareli"
+                onerror="this.onerror=null;this.src='images/clinic-front.jpg';"
+            >
 
             <div class="image-label">
-                <strong>Hahnemann Homoeo Dawakhana</strong>
-                Raebareli, Uttar Pradesh
+                Hahnemann Homoeo Dawakhana • Raebareli
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 <!-- FEATURES -->
+
 <section class="features">
+
     <div class="container feature-grid">
 
         <div class="feature">
             <div class="feature-icon">🌿</div>
-            <h3>Individualized Care</h3>
-            <p>Consultation based on your individual health history.</p>
+            <h3>Personalised Care</h3>
+            <p>Consultation based on individual health needs.</p>
         </div>
 
         <div class="feature">
-            <div class="feature-icon">🩺</div>
-            <h3>Professional Consultation</h3>
-            <p>Health concerns are discussed carefully and responsibly.</p>
+            <div class="feature-icon">🛡️</div>
+            <h3>Patient Focused</h3>
+            <p>Care with attention to your health history.</p>
         </div>
 
         <div class="feature">
-            <div class="feature-icon">📋</div>
-            <h3>Patient Education</h3>
-            <p>Practical information to help you understand your health.</p>
+            <div class="feature-icon">🌱</div>
+            <h3>Holistic Approach</h3>
+            <p>Attention to overall health and well-being.</p>
         </div>
 
         <div class="feature">
-            <div class="feature-icon">📍</div>
-            <h3>Convenient Location</h3>
-            <p>Shop No. 3, Chauhan Market, Kotwali Road, Raebareli.</p>
+            <div class="feature-icon">👨‍⚕️</div>
+            <h3>Experienced Practitioner</h3>
+            <p>Dr. Abhinav Singh, B.H.M.S., PG.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">❤️</div>
+            <h3>Wide Range of Concerns</h3>
+            <p>Support for a variety of health concerns.</p>
         </div>
 
     </div>
+
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+
+<section class="about" id="about">
+
     <div class="container about-grid">
 
         <div class="about-image">
-            <img src="images/clinic-cabin.jpg"
-                 alt="Consultation area at Hahnemann Homoeo Dawakhana">
+
+            <img
+                src="/images/clinic-cabin.jpg"
+                alt="Hahnemann Homoeo Dawakhana consultation area in Raebareli"
+                onerror="this.onerror=null;this.src='images/clinic-cabin.jpg';"
+            >
+
         </div>
 
         <div class="about-text">
 
-            <div class="small-title">About The Clinic</div>
+            <div class="eyebrow">
+                About Hahnemann Homoeo Dawakhana
+            </div>
 
             <h2>
-                Hahnemann Homoeo Dawakhana
+                A Patient-Centred Approach to Healthcare
             </h2>
 
             <p>
                 Hahnemann Homoeo Dawakhana is a homoeopathy clinic
-                located in Raebareli, Uttar Pradesh.
+                located at Chauhan Market, Kotwali Road, Raebareli,
+                Uttar Pradesh.
             </p>
 
             <p>
-                Our approach focuses on listening carefully to patients,
-                understanding their health history and providing
-                individualized consultation.
+                Our consultations focus on understanding the patient's
+                concerns, health history, symptoms and lifestyle so that
+                appropriate professional guidance can be provided.
             </p>
 
-            <p>
-                Health information and treatment decisions should always
-                be based on an appropriate professional assessment.
-            </p>
-
-            <div class="doctor-box">
+            <div class="doctor-card">
                 <strong>Dr. Abhinav Singh</strong><br>
                 B.H.M.S., PG<br>
                 Homoeopathy Practitioner
@@ -860,39 +853,47 @@ footer p{
         </div>
 
     </div>
+
 </section>
 
 <!-- SERVICES -->
+
 <section class="services" id="services">
 
     <div class="container">
 
         <div class="section-heading">
-            <div class="small-title">Our Services</div>
-            <h2>Health Concerns We Discuss</h2>
+
+            <div class="small">Our Services</div>
+
+            <h2>
+                Health Concerns We Commonly Discuss
+            </h2>
+
             <p>
-                Consultations are individualized according to the
-                patient's symptoms, history and circumstances.
+                Consultation and professional guidance for a variety
+                of health concerns.
             </p>
+
         </div>
 
         <div class="service-grid">
 
             <div class="service-card">
                 <div class="service-icon">🦋</div>
-                <h3>Thyroid & Hormonal Concerns</h3>
+                <h3>Thyroid & Hormonal Health</h3>
                 <p>
-                    General information and consultation for thyroid
+                    Individual assessment and guidance for thyroid
                     and hormonal health concerns.
                 </p>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">👩</div>
+                <div class="service-icon">🌸</div>
                 <h3>Women's Health</h3>
                 <p>
-                    Individualized consultation for common women's
-                    health concerns, including menstrual and PCOS-related concerns.
+                    Consultation for concerns such as PCOS and
+                    other women's health issues.
                 </p>
             </div>
 
@@ -900,8 +901,8 @@ footer p{
                 <div class="service-icon">🫁</div>
                 <h3>Respiratory Concerns</h3>
                 <p>
-                    Consultation and health guidance for common
-                    respiratory complaints.
+                    Discussion of common respiratory symptoms and
+                    appropriate healthcare guidance.
                 </p>
             </div>
 
@@ -909,8 +910,8 @@ footer p{
                 <div class="service-icon">🍎</div>
                 <h3>Digestive Health</h3>
                 <p>
-                    Discussion of concerns such as acidity, bloating,
-                    constipation and digestive discomfort.
+                    Guidance for common digestive complaints and
+                    healthy lifestyle habits.
                 </p>
             </div>
 
@@ -918,8 +919,8 @@ footer p{
                 <div class="service-icon">🧴</div>
                 <h3>Skin & Scalp Concerns</h3>
                 <p>
-                    Consultation for selected skin and scalp complaints
-                    with appropriate assessment when needed.
+                    Consultation for common skin and scalp
+                    complaints.
                 </p>
             </div>
 
@@ -927,123 +928,142 @@ footer p{
                 <div class="service-icon">🦴</div>
                 <h3>Joint & Musculoskeletal Concerns</h3>
                 <p>
-                    Discussion of common joint and musculoskeletal
-                    complaints and lifestyle factors.
+                    Discussion of joint, muscle and mobility-related
+                    health concerns.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🧠</div>
+                <h3>Neuropsychiatric Concerns</h3>
+                <p>
+                    Supportive consultation with appropriate referral
+                    when specialist care is required.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🚰</div>
+                <h3>Urinary & Kidney Concerns</h3>
+                <p>
+                    Health guidance for urinary complaints, with
+                    medical evaluation where necessary.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">👶</div>
+                <h3>Pediatric Concerns</h3>
+                <p>
+                    Age-appropriate consultation and guidance for
+                    children's health concerns.
                 </p>
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 <!-- HEALTH ARTICLES -->
-<section id="articles">
+
+<section class="articles" id="articles">
 
     <div class="container">
 
         <div class="section-heading">
-            <div class="small-title">Health Articles</div>
-            <h2>Patient-Friendly Health Information</h2>
+
+            <div class="small">Health Articles</div>
+
+            <h2>
+                Practical Health Information
+            </h2>
+
             <p>
-                Educational articles designed to help readers understand
-                common health concerns and when medical care may be needed.
+                Patient-friendly articles about common health concerns,
+                prevention and healthy daily habits.
             </p>
+
         </div>
 
-        <div class="article-grid">
+        <div class="article-card">
 
-            <article class="article-main">
+            <div class="article-tag">
+                Digestive Health
+            </div>
 
-                <div class="article-tag">
-                    Digestive Health
-                </div>
+            <h3>
+                Digestive Health: Common Causes, Daily Habits and When to Seek Medical Care
+            </h3>
 
-                <h3>
-                    Digestive Health: Common Causes,
-                    Daily Habits and When to Seek Medical Care
-                </h3>
+            <p>
+                Acidity, bloating, constipation and diarrhoea are common
+                digestive complaints. Learn about everyday habits that
+                may support digestive health, warning signs that require
+                medical attention and when professional evaluation is
+                important.
+            </p>
 
-                <p>
-                    Digestive symptoms such as acidity, bloating,
-                    constipation and diarrhoea are common. Their causes
-                    can range from diet and lifestyle factors to infections,
-                    medicines and underlying medical conditions.
-                </p>
-
-                <h4>Helpful Daily Habits</h4>
-
-                <ul>
-                    <li>Eat regular, balanced meals.</li>
-                    <li>Drink adequate fluids unless medically restricted.</li>
-                    <li>Include appropriate fibre in your diet.</li>
-                    <li>Stay physically active.</li>
-                    <li>Notice foods that repeatedly trigger symptoms.</li>
-                    <li>Avoid unnecessary self-medication.</li>
-                </ul>
-
-                <h4 style="margin-top:20px;">
-                    When to Seek Medical Care
-                </h4>
-
-                <p>
-                    Consult a qualified healthcare professional if symptoms
-                    are persistent, recurrent, worsening, or associated with
-                    unexplained weight loss, blood in the stool, persistent
-                    vomiting, severe abdominal pain or other concerning symptoms.
-                </p>
-
-            </article>
-
-            <aside class="article-side">
-
-                <h3>More Topics Coming Soon</h3>
-
-                <p>Thyroid health</p>
-                <p>PCOS and women's health</p>
-                <p>Respiratory health</p>
-                <p>Skin complaints</p>
-                <p>Kidney and urinary health</p>
-                <p>Hair and scalp problems</p>
-                <p>Joint health</p>
-                <p>Pediatric health</p>
-
-                <a class="btn btn-primary"
-                   href="tel:+919450611825">
-                    Ask About Consultation
-                </a>
-
-            </aside>
+            <a href="blog/digestive-health.html" class="read-more">
+                Read Health Article →
+            </a>
 
         </div>
 
     </div>
+
 </section>
 
 <!-- GALLERY -->
+
 <section class="gallery" id="gallery">
 
     <div class="container">
 
         <div class="section-heading">
-            <div class="small-title">Our Clinic</div>
-            <h2>Visit Hahnemann Homoeo Dawakhana</h2>
+
+            <div class="small">Our Clinic</div>
+
+            <h2>
+                Visit Hahnemann Homoeo Dawakhana
+            </h2>
+
             <p>
-                Our clinic is located at Chauhan Market,
-                Kotwali Road, Raebareli.
+                Our clinic is located at Chauhan Market, Kotwali Road,
+                Raebareli.
             </p>
+
         </div>
 
         <div class="gallery-grid">
 
             <div class="gallery-item">
-                <img src="images/clinic-front.jpg"
-                     alt="Hahnemann Homoeo Dawakhana front view">
+
+                <img
+                    src="/images/clinic-front.jpg"
+                    alt="Hahnemann Homoeo Dawakhana clinic front"
+                    onerror="this.onerror=null;this.src='images/clinic-front.jpg';"
+                >
+
+                <div class="gallery-caption">
+                    Hahnemann Homoeo Dawakhana — Clinic Front
+                </div>
+
             </div>
 
             <div class="gallery-item">
-                <img src="images/clinic-cabin.jpg"
-                     alt="Hahnemann Homoeo Dawakhana consultation area">
+
+                <img
+                    src="/images/clinic-cabin.jpg"
+                    alt="Hahnemann Homoeo Dawakhana consultation cabin"
+                    onerror="this.onerror=null;this.src='images/clinic-cabin.jpg';"
+                >
+
+                <div class="gallery-caption">
+                    Consultation Area
+                </div>
+
             </div>
 
         </div>
@@ -1053,13 +1073,14 @@ footer p{
 </section>
 
 <!-- CONTACT -->
+
 <section class="contact" id="contact">
 
     <div class="container contact-grid">
 
         <div>
 
-            <div class="small-title" style="color:#a9e0cb;">
+            <div class="eyebrow" style="color:#b9e5d4;">
                 Contact Us
             </div>
 
@@ -1068,48 +1089,40 @@ footer p{
             </h2>
 
             <p>
-                For appointments and clinic-related enquiries,
-                please contact us directly.
+                For appointments and consultation information,
+                please contact the clinic.
             </p>
 
-            <p>
-                We recommend seeking appropriate medical evaluation
-                for persistent, severe or unusual symptoms.
-            </p>
+            <a
+                href="https://wa.me/919450611825"
+                class="whatsapp"
+                target="_blank"
+                rel="noopener"
+            >
+                💬 WhatsApp for Appointment
+            </a>
 
         </div>
 
-        <div class="contact-card">
+        <div class="contact-box">
 
             <div class="contact-row">
-                <strong>Doctor</strong>
-                Dr. Abhinav Singh, B.H.M.S., PG
-            </div>
-
-            <div class="contact-row">
-                <strong>Phone</strong>
-                <a href="tel:+919450611825">
-                    +91 94506 11825
-                </a>
-            </div>
-
-            <div class="contact-row">
-                <strong>Address</strong>
+                <strong>📍 Clinic Address</strong>
                 Shop No. 3, Chauhan Market,<br>
                 Kotwali Road, Raebareli,<br>
-                Uttar Pradesh, India
+                Uttar Pradesh
             </div>
 
             <div class="contact-row">
-                <strong>Clinic Timings</strong>
+                <strong>📞 Phone</strong>
+                +91 94506 11825
+            </div>
+
+            <div class="contact-row">
+                <strong>🕐 Clinic Timings</strong>
                 Morning: 10:00 AM – 2:30 PM<br>
                 Evening: 5:30 PM – 9:00 PM
             </div>
-
-            <a class="btn btn-primary"
-               href="tel:+919450611825">
-                📞 Call for Appointment
-            </a>
 
         </div>
 
@@ -1117,59 +1130,32 @@ footer p{
 
 </section>
 
-<!-- DISCLAIMER -->
-<div class="disclaimer">
+<!-- FOOTER -->
+
+<footer>
 
     <div class="container">
 
-        <p>
-            <strong>Health Information Disclaimer:</strong>
-            The information on this website is provided for general
-            educational purposes only and does not replace professional
-            medical diagnosis, treatment or emergency care. Health
-            conditions can have different causes and require appropriate
-            assessment. If you have severe or urgent symptoms, seek
-            appropriate medical or emergency care promptly.
-        </p>
+        <div class="footer-name">
+            Hahnemann Homoeo Dawakhana
+        </div>
 
-    </div>
+        <div>
+            Raebareli, Uttar Pradesh
+        </div>
 
-</div>
-
-<!-- FOOTER -->
-<footer>
-
-    <div class="container footer-inner">
-
-        <p>
+        <p style="margin-top:10px;">
             © 2026 Hahnemann Homoeo Dawakhana. All rights reserved.
         </p>
 
-        <p>
-            Dr. Abhinav Singh, B.H.M.S., PG • Raebareli, Uttar Pradesh
+        <p style="margin-top:8px;font-size:12px;">
+            Health information on this website is educational and does
+            not replace professional diagnosis or treatment.
         </p>
 
     </div>
 
 </footer>
-
-<!-- FLOATING BUTTONS -->
-<div class="floating">
-
-    <a class="float-btn call"
-       href="tel:+919450611825"
-       aria-label="Call Hahnemann Homoeo Dawakhana">
-        ☎️
-    </a>
-
-    <a class="float-btn whatsapp"
-       href="https://wa.me/919450611825"
-       target="_blank"
-       aria-label="WhatsApp Hahnemann Homoeo Dawakhana">
-        ◉
-    </a>
-
-</div>
 
 </body>
 </html>
