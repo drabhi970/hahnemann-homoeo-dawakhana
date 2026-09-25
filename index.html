@@ -959,6 +959,186 @@ footer {
     }
 }
 
+/* =========================
+   HEALTH ARTICLES
+========================= */
+
+.articles-section {
+  padding: 70px 20px;
+  background: #f6faf8;
+}
+
+.articles-wrap {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.articles-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.small-title {
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.articles-heading h2 {
+  font-size: 36px;
+  color: #123c36;
+  margin: 0 0 15px;
+}
+
+.articles-heading p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Featured Article */
+
+.featured-article {
+  background: linear-gradient(135deg, #0f766e, #145f58);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 35px;
+  color: white;
+}
+
+.featured-content {
+  max-width: 800px;
+}
+
+.featured-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  opacity: 0.85;
+}
+
+.featured-article h3 {
+  font-size: 30px;
+  margin: 0 0 15px;
+}
+
+.featured-article p {
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.read-button {
+  display: inline-block;
+  background: white;
+  color: #0f766e;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Article Grid */
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.article-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid #e2eeeb;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+}
+
+.article-icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.article-category {
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.article-card h3 {
+  color: #173f39;
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+.article-card p {
+  color: #555;
+  line-height: 1.65;
+  font-size: 15px;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.article-time {
+  color: #777;
+  font-size: 13px;
+}
+
+.article-link {
+  color: #0f766e;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.articles-cta {
+  text-align: center;
+  margin-top: 35px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .article-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .articles-section {
+    padding: 50px 15px;
+  }
+
+  .articles-heading h2 {
+    font-size: 28px;
+  }
+
+  .featured-article {
+    padding: 28px 22px;
+  }
+
+  .featured-article h3 {
+    font-size: 24px;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 
