@@ -46,4 +46,68 @@ footer{background:#063f3f;color:#fff;text-align:center;padding:23px 15px;font-si
 <section class="gallery" id="gallery"><div class="container"><div class="section-heading"><div class="mini">OUR CLINIC</div><h2>Visit Hahnemann Homoeo Dawakhana</h2><p>A comfortable consultation environment in Raebareli.</p></div><div class="gallery-grid"><div class="gallery-card"><img src="images/IMG20260924101336.jpg?v=3" alt="Consultation room at Hahnemann Homoeo Dawakhana"></div><div class="gallery-card"><img src="images/clinic-front.jpg?v=3" alt="Hahnemann Homoeo Dawakhana clinic in Raebareli"></div></div></div></section>
 <section class="contact" id="contact"><div class="container contact-grid"><div><div class="eyebrow" style="color:#bde8e5">CONTACT US</div><h2>Book a Consultation</h2><p>For consultation and appointment information, please contact the clinic directly.</p><a href="tel:+919450611825" class="contact-btn">📞 Call +91 94506 11825</a></div><div class="contact-box"><p><strong>Clinic</strong>Hahnemann Homoeo Dawakhana</p><p><strong>Doctor</strong>Dr. Abhinav Singh, B.H.M.S., PG</p><p><strong>Address</strong>Shop No. 3, Chauhan Market, Kotwali Road, Raebareli, Uttar Pradesh, India</p><p><strong>Morning</strong>10:00 AM – 2:30 PM</p><p><strong>Evening</strong>5:30 PM – 9:00 PM</p><p><strong>Phone</strong>+91 94506 11825</p></div></div></section>
 <footer><div>© 2026 Hahnemann Homoeo Dawakhana, Raebareli. All Rights Reserved.</div><div class="footer-note">Health information on this website is educational and does not replace professional medical advice.</div></footer>
+<!-- FLOATING CONTACT BUTTONS -->
+<style>
+.floating-contact {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.floating-contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 145px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 5px 18px rgba(0,0,0,.22);
+}
+
+.call-floating {
+  background: #075d5d;
+}
+
+.whatsapp-floating {
+  background: #128c7e;
+}
+
+.floating-contact a:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .floating-contact {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .floating-contact a {
+    min-width: 125px;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
+</style>
+
+<div class="floating-contact">
+  <a class="call-floating" href="tel:+919450611825">
+    📞 Call Now
+  </a>
+
+  <a class="whatsapp-floating"
+     href="https://wa.me/919450611825?text=Hello%2C%20I%20would%20like%20to%20book%20a%20consultation."
+     target="_blank"
+     rel="noopener">
+    💬 WhatsApp
+  </a>
+</div>
 </body></html>
