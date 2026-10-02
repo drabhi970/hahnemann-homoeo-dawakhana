@@ -1,124 +1,316 @@
-<article class="health-article">
-  <header>
-    <p class="article-category">THYROID HEALTH</p>
-    <h1>Thyroid Health: Common Symptoms, Useful Tests, and When to Seek Medical Care</h1>
-    <p class="article-intro">
-      Thyroid problems are common and may affect energy, mood, weight, sleep, digestion, heart rate, and menstrual health.
-      Understanding the symptoms and getting appropriate medical evaluation can help people take timely action.
-    </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thyroid Health: Symptoms, Tests & When to Seek Medical Care | Hahnemann Homoeo Dawakhana</title>
+  <meta name="description" content="Learn about common thyroid symptoms, hypothyroidism, hyperthyroidism, useful tests, healthy habits and warning signs that need medical attention.">
+  <meta name="keywords" content="thyroid symptoms Raebareli, hypothyroidism, hyperthyroidism, thyroid health, thyroid tests, Hahnemann Homoeo Dawakhana">
+  <meta name="author" content="Hahnemann Homoeo Dawakhana, Raebareli">
+  <meta name="robots" content="index, follow">
+  <style>
+    :root{
+      --primary:#176b5b;
+      --primary-dark:#0f5145;
+      --accent:#e8f6f1;
+      --gold:#d69b2d;
+      --text:#24332f;
+      --muted:#66746f;
+      --bg:#f5faf8;
+      --white:#fff;
+      --danger:#a33a32;
+      --shadow:0 10px 30px rgba(20,70,60,.10);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.7;
+    }
+    .hero{
+      background:linear-gradient(135deg,#0f5145,#23806d);
+      color:#fff;
+      padding:52px 20px 58px;
+    }
+    .container{max-width:1050px;margin:auto}
+    .badge{
+      display:inline-block;
+      padding:7px 13px;
+      border:1px solid rgba(255,255,255,.35);
+      border-radius:30px;
+      font-size:13px;
+      letter-spacing:1.2px;
+      font-weight:700;
+      margin-bottom:16px;
+    }
+    h1{
+      font-size:clamp(30px,5vw,48px);
+      line-height:1.15;
+      margin:0 0 18px;
+      max-width:900px;
+    }
+    .hero p{
+      max-width:780px;
+      font-size:18px;
+      margin:0;
+      opacity:.94;
+    }
+    .brand{
+      margin-top:25px;
+      font-weight:700;
+      font-size:15px;
+    }
+    main{padding:34px 20px 60px}
+    .intro-card,.card,.note,.cta{
+      background:var(--white);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .intro-card{
+      padding:25px;
+      margin-bottom:28px;
+      border-left:5px solid var(--gold);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:20px;
+      margin:20px 0 32px;
+    }
+    .card{padding:25px}
+    .icon{
+      width:46px;height:46px;
+      display:flex;align-items:center;justify-content:center;
+      border-radius:50%;
+      background:var(--accent);
+      font-size:23px;
+      margin-bottom:13px;
+    }
+    h2{
+      color:var(--primary-dark);
+      font-size:28px;
+      margin:34px 0 14px;
+      line-height:1.25;
+    }
+    h3{margin:5px 0 9px;color:var(--primary-dark)}
+    p{margin:10px 0}
+    ul{padding-left:22px}
+    li{margin:7px 0}
+    .test-list{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      list-style:none;
+      padding:0;
+    }
+    .test-list li{
+      background:var(--accent);
+      padding:14px 16px;
+      border-radius:12px;
+      margin:0;
+      font-weight:600;
+    }
+    .warning{
+      background:#fff7f5;
+      border-left:5px solid var(--danger);
+      padding:22px;
+      border-radius:14px;
+      margin:20px 0;
+    }
+    .warning h2{color:var(--danger);margin-top:0}
+    .tip{
+      background:#eef8f5;
+      border-left:5px solid var(--primary);
+      padding:20px;
+      border-radius:14px;
+      margin:20px 0;
+    }
+    .cta{
+      margin-top:35px;
+      padding:30px;
+      background:linear-gradient(135deg,#e8f6f1,#fff);
+      border:1px solid #d4ebe4;
+    }
+    .cta h2{margin-top:0}
+    .disclaimer{
+      margin-top:25px;
+      color:var(--muted);
+      font-size:14px;
+      background:#f0f3f2;
+      padding:20px;
+      border-radius:14px;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:20px;
+    }
+    strong{color:#183d35}
+    @media(max-width:700px){
+      .grid,.test-list{grid-template-columns:1fr}
+      .hero{padding:40px 18px 45px}
+      main{padding:25px 15px 45px}
+      h2{font-size:24px}
+      .card,.intro-card{padding:20px}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="badge">THYROID HEALTH</span>
+      <h1>Thyroid Health: Understand the Symptoms & Take the Right Next Step</h1>
+      <p>
+        Learn about common thyroid symptoms, commonly used tests, everyday health habits,
+        and warning signs that may need prompt medical attention.
+      </p>
+      <div class="brand">Hahnemann Homoeo Dawakhana · Raebareli, Uttar Pradesh</div>
+    </div>
   </header>
 
-  <section>
-    <h2>What does the thyroid gland do?</h2>
-    <p>
-      The thyroid is a small gland in the neck that produces hormones involved in metabolism and many body functions.
-      When the gland produces too little hormone, the condition is commonly called <strong>hypothyroidism</strong>.
-      When it produces too much hormone, it may be called <strong>hyperthyroidism</strong>.
-    </p>
-    <p>
-      Symptoms can overlap with stress, poor sleep, nutritional deficiencies, medication effects, and other health conditions.
-      This is why symptoms alone cannot confirm a thyroid disorder.
-    </p>
-  </section>
+  <main>
+    <div class="container">
+      <div class="intro-card">
+        <div class="meta">Health Education Article</div>
+        <strong>Why thyroid health matters:</strong>
+        The thyroid gland produces hormones that influence metabolism and several body functions.
+        Thyroid disorders can affect energy, weight, sleep, digestion, heart rate, mood and menstrual health.
+      </div>
 
-  <section>
-    <h2>Common symptoms of an underactive thyroid</h2>
-    <p>Some people with hypothyroidism may notice:</p>
-    <ul>
-      <li>Persistent tiredness or low energy</li>
-      <li>Feeling unusually cold</li>
-      <li>Dry skin or increased hair fall</li>
-      <li>Constipation</li>
-      <li>Difficulty concentrating or feeling mentally slowed down</li>
-      <li>Weight gain or difficulty losing weight</li>
-      <li>Low mood or reduced motivation</li>
-      <li>Heavy or irregular menstrual periods</li>
-      <li>Muscle aches, cramps, or joint discomfort</li>
-    </ul>
-  </section>
+      <h2>What does the thyroid gland do?</h2>
+      <p>
+        The thyroid is a small gland located in the front of the neck. It produces hormones that
+        help regulate the body's metabolism and support many normal body functions.
+        When thyroid hormone levels are too low, the condition is commonly called
+        <strong>hypothyroidism</strong>. When they are too high, it is commonly called
+        <strong>hyperthyroidism</strong>.
+      </p>
+      <p>
+        Many thyroid symptoms can also occur with other conditions. Symptoms alone therefore
+        cannot confirm a thyroid disorder; appropriate medical evaluation and testing may be needed.
+      </p>
 
-  <section>
-    <h2>Common symptoms of an overactive thyroid</h2>
-    <p>Hyperthyroidism may be associated with:</p>
-    <ul>
-      <li>Fast or irregular heartbeat</li>
-      <li>Feeling restless, anxious, or unusually irritable</li>
-      <li>Increased sweating or heat intolerance</li>
-      <li>Unintentional weight loss</li>
-      <li>Hand tremors</li>
-      <li>Frequent bowel movements</li>
-      <li>Difficulty sleeping</li>
-      <li>Muscle weakness</li>
-      <li>Changes in menstrual cycles</li>
-    </ul>
-  </section>
+      <h2>Common symptoms of an underactive thyroid</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🌿</div>
+          <h3>Energy & mood</h3>
+          <p>Persistent tiredness, low energy, difficulty concentrating or low mood may occur.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⚖️</div>
+          <h3>Weight & temperature</h3>
+          <p>Some people experience weight gain or increased sensitivity to cold.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💧</div>
+          <h3>Skin & hair</h3>
+          <p>Dry skin and increased hair fall can sometimes accompany hypothyroidism.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🍎</div>
+          <h3>Digestion & periods</h3>
+          <p>Constipation or changes in menstrual bleeding may occur in some people.</p>
+        </div>
+      </div>
 
-  <section>
-    <h2>Which tests are commonly used?</h2>
-    <p>
-      A clinician may recommend blood tests based on symptoms, examination findings, age, pregnancy status, and medical history.
-      Commonly used tests may include:
-    </p>
-    <ul>
-      <li><strong>TSH:</strong> often used as an initial thyroid function test</li>
-      <li><strong>Free T4:</strong> helps assess the amount of available thyroid hormone</li>
-      <li><strong>Free T3:</strong> may be useful in selected cases, especially when overactive thyroid is suspected</li>
-      <li><strong>Thyroid antibody tests:</strong> may help assess autoimmune thyroid conditions</li>
-      <li><strong>Ultrasound:</strong> may be advised when there is a neck swelling, nodule, or other structural concern</li>
-    </ul>
-    <p>
-      Test selection and interpretation should be done by a qualified healthcare professional. Results can be affected by
-      pregnancy, recent illness, medicines, and certain supplements.
-    </p>
-  </section>
+      <h2>Common symptoms of an overactive thyroid</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>❤️ Heart rate</h3>
+          <p>A fast or irregular heartbeat can occur.</p>
+        </div>
+        <div class="card">
+          <h3>🌡️ Heat & sweating</h3>
+          <p>Increased sweating or difficulty tolerating heat may be noticed.</p>
+        </div>
+        <div class="card">
+          <h3>⚖️ Weight changes</h3>
+          <p>Unintentional weight loss can occur despite normal or increased appetite.</p>
+        </div>
+        <div class="card">
+          <h3>😴 Sleep & restlessness</h3>
+          <p>Restlessness, difficulty sleeping or hand tremors may occur.</p>
+        </div>
+      </div>
 
-  <section>
-    <h2>Everyday habits that support general thyroid health</h2>
-    <p>
-      Healthy routines do not replace diagnosis or treatment, but they can support overall wellbeing:
-    </p>
-    <ul>
-      <li>Eat regular, balanced meals with adequate protein and a variety of fruits and vegetables.</li>
-      <li>Take prescribed medicines exactly as directed and do not change the dose on your own.</li>
-      <li>Keep follow-up appointments and complete repeat tests when advised.</li>
-      <li>Prioritise regular sleep and gentle physical activity as tolerated.</li>
-      <li>Tell your clinician about supplements, herbal products, and over-the-counter medicines.</li>
-      <li>Avoid taking high-dose iodine supplements unless specifically advised by a clinician.</li>
-    </ul>
-  </section>
+      <h2>Which tests may be used?</h2>
+      <p>
+        A healthcare professional selects tests according to symptoms, examination findings,
+        medical history and other circumstances. Commonly used investigations include:
+      </p>
+      <ul class="test-list">
+        <li>TSH — often an initial thyroid function test</li>
+        <li>Free T4 — assesses available thyroid hormone</li>
+        <li>Free T3 — useful in selected situations</li>
+        <li>Thyroid antibodies — may help assess autoimmune thyroid conditions</li>
+        <li>Ultrasound — may be advised for nodules or neck swelling</li>
+        <li>Other tests — when another cause of symptoms is suspected</li>
+      </ul>
 
-  <section>
-    <h2>When should you seek urgent medical care?</h2>
-    <p>Seek urgent medical help if thyroid-related symptoms occur with:</p>
-    <ul>
-      <li>Chest pain, severe breathlessness, or fainting</li>
-      <li>A very fast or irregular heartbeat with weakness or dizziness</li>
-      <li>Confusion, extreme drowsiness, or a sudden change in mental status</li>
-      <li>Severe swelling in the neck with difficulty breathing or swallowing</li>
-      <li>Sudden worsening in a person who is pregnant or has a known thyroid condition</li>
-    </ul>
-  </section>
+      <div class="tip">
+        <strong>Important:</strong> Thyroid test results should be interpreted in context.
+        Pregnancy, recent illness, medicines and some supplements can affect thyroid-related results.
+      </div>
 
-  <section>
-    <h2>Thyroid care at Hahnemann Homoeo Dawakhana, Raebareli</h2>
-    <p>
-      People with thyroid symptoms can benefit from a careful review of their history, current medicines, previous test reports,
-      and other health concerns. At Hahnemann Homoeo Dawakhana in Raebareli, patients are encouraged to seek an individual
-      consultation and to continue appropriate medical evaluation and monitoring when required.
-    </p>
-    <p>
-      Bring recent reports, a list of current medicines, and details about symptoms such as weight changes, menstrual changes,
-      palpitations, constipation, sleep disturbance, or hair fall.
-    </p>
-  </section>
+      <h2>Healthy habits that support overall wellbeing</h2>
+      <div class="card">
+        <ul>
+          <li>Eat a balanced diet with a variety of nutritious foods.</li>
+          <li>Maintain regular sleep and physical activity appropriate for your health.</li>
+          <li>Take prescribed thyroid medicine exactly as directed.</li>
+          <li>Do not change or stop prescribed medicine without discussing it with your clinician.</li>
+          <li>Tell your healthcare professional about supplements and over-the-counter medicines.</li>
+          <li>Avoid high-dose iodine supplements unless specifically recommended by a healthcare professional.</li>
+          <li>Keep recommended follow-up appointments and repeat testing when advised.</li>
+        </ul>
+      </div>
 
-  <section class="responsible-note">
-    <h2>Important note</h2>
-    <p>
-      This article is for general education only and does not replace professional diagnosis, testing, or treatment.
-      Thyroid symptoms can have many causes. Please consult a qualified healthcare professional before starting, stopping,
-      or changing any medicine or supplement. Homoeopathic care should not be used as a substitute for emergency treatment
-      or medically necessary evaluation.
-    </p>
-  </section>
-</article>
+      <div class="warning">
+        <h2>⚠️ When should you seek urgent medical care?</h2>
+        <p>Seek urgent medical attention if symptoms occur with:</p>
+        <ul>
+          <li>Chest pain, severe breathlessness or fainting</li>
+          <li>A very fast or irregular heartbeat with severe weakness or dizziness</li>
+          <li>Confusion, extreme drowsiness or a sudden change in mental status</li>
+          <li>Severe neck swelling with difficulty breathing or swallowing</li>
+          <li>Sudden or severe worsening of symptoms, especially during pregnancy or with known thyroid disease</li>
+        </ul>
+      </div>
+
+      <h2>When should you discuss symptoms with a doctor?</h2>
+      <p>
+        If tiredness, unexplained weight change, persistent constipation or diarrhoea, hair changes,
+        menstrual changes, palpitations, sleep problems or temperature intolerance continue,
+        consider discussing them with a qualified healthcare professional. A proper history,
+        examination and appropriate investigations can help identify the cause.
+      </p>
+
+      <div class="cta">
+        <h2>Thyroid health consultation in Raebareli</h2>
+        <p>
+          At <strong>Hahnemann Homoeo Dawakhana, Raebareli</strong>, patients can bring their
+          previous thyroid reports, current medication list and details of their symptoms for
+          discussion during a consultation.
+        </p>
+        <p>
+          Appropriate medical evaluation and monitoring remain important for people with suspected
+          or diagnosed thyroid disorders.
+        </p>
+      </div>
+
+      <div class="disclaimer">
+        <strong>Responsible health note:</strong>
+        This article is for general educational purposes only and does not replace professional
+        diagnosis, testing or treatment. Thyroid symptoms can have many causes. Consult a qualified
+        healthcare professional before starting, stopping or changing any medicine or supplement.
+        Do not delay emergency care or medically necessary evaluation.
+      </div>
+    </div>
+  </main>
+</body>
+</html>
